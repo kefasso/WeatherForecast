@@ -1,0 +1,87 @@
+WeatherForecast/WeatherForecast/Podfile.lock
+WeatherForecast/WeatherForecast/Pods/Manifest.lock
+WeatherForecast/WeatherForecast/Pods/AFNetworking/LICENSE
+WeatherForecast/WeatherForecast/Pods/AFNetworking/README.md
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/AFNetworking/AFURLSessionManager.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIAlertView+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIAlertView+AFNetworking.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIImage+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIKit+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.m
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.m
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/AFHTTPRequestOperation.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/AFHTTPRequestOperationManager.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/AFHTTPSessionManager.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/AFNetworkActivityIndicatorManager.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/AFNetworkReachabilityManager.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/AFSecurityPolicy.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/AFURLConnectionOperation.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/AFURLRequestSerialization.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/AFURLResponseSerialization.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/AFURLSessionManager.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/UIActivityIndicatorView+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/UIAlertView+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/UIButton+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/UIImage+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/UIImageView+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/UIKit+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/UIProgressView+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/UIRefreshControl+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/Headers/Private/AFNetworking/UIWebView+AFNetworking.h
+WeatherForecast/WeatherForecast/Pods/Pods.xcodeproj/project.pbxproj
+WeatherForecast/WeatherForecast/Pods/Pods.xcodeproj/xcuserdata/admin.xcuserdatad/xcschemes/AFNetworking.xcscheme
+WeatherForecast/WeatherForecast/Pods/Pods.xcodeproj/xcuserdata/admin.xcuserdatad/xcschemes/Pods-WeatherForecast.xcscheme
+WeatherForecast/WeatherForecast/Pods/Pods.xcodeproj/xcuserdata/admin.xcuserdatad/xcschemes/xcschememanagement.plist
+WeatherForecast/WeatherForecast/Pods/Target Support Files/AFNetworking/AFNetworking-dummy.m
+WeatherForecast/WeatherForecast/Pods/Target Support Files/AFNetworking/AFNetworking-prefix.pch
+WeatherForecast/WeatherForecast/Pods/Target Support Files/AFNetworking/AFNetworking-umbrella.h
+WeatherForecast/WeatherForecast/Pods/Target Support Files/AFNetworking/AFNetworking.modulemap
+WeatherForecast/WeatherForecast/Pods/Target Support Files/AFNetworking/AFNetworking.xcconfig
+WeatherForecast/WeatherForecast/Pods/Target Support Files/AFNetworking/Info.plist
+WeatherForecast/WeatherForecast/Pods/Target Support Files/Pods-WeatherForecast/Info.plist
+WeatherForecast/WeatherForecast/Pods/Target Support Files/Pods-WeatherForecast/Pods-WeatherForecast-acknowledgements.markdown
+WeatherForecast/WeatherForecast/Pods/Target Support Files/Pods-WeatherForecast/Pods-WeatherForecast-acknowledgements.plist
+WeatherForecast/WeatherForecast/Pods/Target Support Files/Pods-WeatherForecast/Pods-WeatherForecast-dummy.m
+WeatherForecast/WeatherForecast/Pods/Target Support Files/Pods-WeatherForecast/Pods-WeatherForecast-frameworks.sh
+WeatherForecast/WeatherForecast/Pods/Target Support Files/Pods-WeatherForecast/Pods-WeatherForecast-resources.sh
+WeatherForecast/WeatherForecast/Pods/Target Support Files/Pods-WeatherForecast/Pods-WeatherForecast-umbrella.h
+WeatherForecast/WeatherForecast/Pods/Target Support Files/Pods-WeatherForecast/Pods-WeatherForecast.debug.xcconfig
+WeatherForecast/WeatherForecast/Pods/Target Support Files/Pods-WeatherForecast/Pods-WeatherForecast.modulemap
+WeatherForecast/WeatherForecast/Pods/Target Support Files/Pods-WeatherForecast/Pods-WeatherForecast.release.xcconfig
+WeatherForecast/WeatherForecast/WeatherForecast.xcodeproj/project.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate
+WeatherForecast/WeatherForecast/WeatherForecast.xcodeproj/xcuserdata/admin.xcuserdatad/xcschemes/WeatherForecast.xcscheme
+WeatherForecast/WeatherForecast/WeatherForecast.xcodeproj/xcuserdata/admin.xcuserdatad/xcschemes/xcschememanagement.plist
+WeatherForecast/WeatherForecast/WeatherForecast.xcworkspace/contents.xcworkspacedata
+WeatherForecast/WeatherForecast/WeatherForecast.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate
+WeatherForecast/WeatherForecast/WeatherForecast.xcworkspace/xcuserdata/admin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
