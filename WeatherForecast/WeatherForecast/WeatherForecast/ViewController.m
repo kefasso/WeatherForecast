@@ -88,6 +88,7 @@
         NSString *lon = [NSString stringWithFormat:@"%f", _locationManager.location.coordinate.longitude];
         [[LoadMethods defaultMethods] getWeatherByLongitude:lon andLatitude:lat to:^(LocationWeather *dic){
             WeatherListController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"WeatherListController"];
+            vc.locationWeather = dic;
             UINavigationController *nc = self.navigationController;
             [nc pushViewController:vc animated:YES];
             
@@ -99,7 +100,4 @@
     
 }
 
-- (IBAction)checkForCity:(id)sender {
-    
-}
 @end

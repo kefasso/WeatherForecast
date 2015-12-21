@@ -20,6 +20,7 @@
 @property (nonatomic, strong) NSString *icon;
 
 @property (nonatomic, strong) NSString *desc;
+@property (nonatomic, strong) NSString *dateStr;
 
 @property (nonatomic, strong) NSNumber *wind_deg;
 @property (nonatomic, strong) NSNumber *wind_speeds;

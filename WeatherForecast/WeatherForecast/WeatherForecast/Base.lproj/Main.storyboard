@@ -44,14 +44,6 @@
                                     <action selector="checkForLocalization:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X8N-1w-qcS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7u-ef-N89">
-                                <rect key="frame" x="49" y="281" width="221" height="43"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Check by city name"/>
-                                <connections>
-                                    <action selector="checkForCity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3l-07-kRq"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather Forecast" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9j-fM-Xmo">
                                 <rect key="frame" x="20" y="97" width="280" height="28"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
@@ -62,15 +54,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="D9j-fM-Xmo" secondAttribute="trailing" constant="20" id="1i5-iT-9oq"/>
-                            <constraint firstItem="p7u-ef-N89" firstAttribute="top" secondItem="diE-7V-8dR" secondAttribute="bottom" constant="38" id="FIr-l0-3Y9"/>
                             <constraint firstItem="diE-7V-8dR" firstAttribute="top" secondItem="D9j-fM-Xmo" secondAttribute="bottom" constant="75" id="QHd-Hx-cDC"/>
                             <constraint firstItem="diE-7V-8dR" firstAttribute="centerX" secondItem="D9j-fM-Xmo" secondAttribute="centerX" id="RiY-Fe-R6M"/>
-                            <constraint firstItem="diE-7V-8dR" firstAttribute="centerX" secondItem="p7u-ef-N89" secondAttribute="centerX" id="bRQ-sm-Oaj"/>
                             <constraint firstItem="D9j-fM-Xmo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="gwU-Qc-JDf"/>
-                            <constraint firstItem="p7u-ef-N89" firstAttribute="width" secondItem="diE-7V-8dR" secondAttribute="width" id="jSx-fF-jgN"/>
                             <constraint firstItem="D9j-fM-Xmo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="kCG-vn-WxM"/>
                             <constraint firstAttribute="trailing" secondItem="diE-7V-8dR" secondAttribute="trailing" constant="50" id="luM-ux-Vd7"/>
-                            <constraint firstItem="p7u-ef-N89" firstAttribute="height" secondItem="diE-7V-8dR" secondAttribute="height" id="x0U-6a-UyR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="i85-kp-09m"/>

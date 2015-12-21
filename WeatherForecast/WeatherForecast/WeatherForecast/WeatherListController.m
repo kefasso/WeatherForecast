@@ -7,6 +7,10 @@
 //
 
 #import "WeatherListController.h"
+#import "WeatherCell.h"
+#import "LoadMethods.h"
+
+#define kWeatherItemCell @"WeatherCell"
 
 @interface WeatherListController ()
 @property (weak, nonatomic) IBOutlet UITableView *tView;
@@ -17,6 +21,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UINib *nib = [UINib nibWithNibName:kWeatherItemCell bundle:[NSBundle mainBundle]];
+    [_tView registerNib:nib forCellReuseIdentifier:kWeatherItemCell];
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    [_tView addSubview:refreshControl];
     // Do any additional setup after loading the view.
 }
 
@@ -51,8 +62,13 @@
     NSInteger section = indexPath.section;
     
     if (section == 0) {
-        
+        NSString *simpleIdentifier = @"SimpleTabItem";
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleIdentifier];
+        cell.textLabel.text = [NSString stringWithFormat:@"%@ (5 days)", _locationWeather.locationName];
     } else if (section == 1){
+        WeatherCell *wc = [tableView dequeueReusableCellWithIdentifier:kWeatherItemCell forIndexPath:indexPath];
+        wc.item = _locationWeather.weatherItems[row];
+        cell = wc;
         
     }
     
@@ -65,11 +81,26 @@
         return 44;
         
     } else if (indexPath.section == 1) {
-        return 44;
+        return 150;
         
     } else {
         return 44.0;
     }
+    
+}
+
+- (void)refresh:(UIRefreshControl*)refreshControl {
+    NSString *lat = [NSString stringWithFormat:@"%@", _locationWeather.latitude];
+    NSString *lon = [NSString stringWithFormat:@"%@", _locationWeather.longitude];
+    [[LoadMethods defaultMethods] getWeatherByLongitude:lon andLatitude:lat to:^(LocationWeather *dic){
+        _locationWeather = dic;
+        [_tView reloadData];
+        
+        [refreshControl endRefreshing];
+        
+    }failure:^(NSError *error){
+        [refreshControl endRefreshing];
+    }];
     
 }
 

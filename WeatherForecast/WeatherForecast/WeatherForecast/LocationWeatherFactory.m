@@ -31,22 +31,23 @@
 }
 
 + (WeatherItem*)getLocationWeatherFromJson:(NSDictionary*)json{
-    WeatherItem *locationWeather = [WeatherItem new];
+    WeatherItem *weatherItem = [WeatherItem new];
     NSDictionary *main = json[@"main"];
     NSDictionary *weather = json[@"weather"][0];
     NSDictionary *wind = json[@"wind"];
-    locationWeather.clouds = json[@"clouds"][@"all"];
-    locationWeather.humidity = main[@"humidity"];
-    locationWeather.pressure = main[@"pressure"];
-    locationWeather.temp = main[@"temp"];
-    locationWeather.temp_max = main[@"temp_max"];
-    locationWeather.temp_min = main[@"temp_min"];
-    locationWeather.wind_deg = wind[@"deg"];
-    locationWeather.wind_speeds = wind[@"speed"];
-    locationWeather.desc = weather[@"description"];
-    locationWeather.icon = weather[@"icon"];
+    weatherItem.clouds = json[@"clouds"][@"all"];
+    weatherItem.humidity = main[@"humidity"];
+    weatherItem.pressure = main[@"pressure"];
+    weatherItem.temp = main[@"temp"];
+    weatherItem.temp_max = main[@"temp_max"];
+    weatherItem.temp_min = main[@"temp_min"];
+    weatherItem.wind_deg = wind[@"deg"];
+    weatherItem.wind_speeds = wind[@"speed"];
+    weatherItem.desc = weather[@"description"];
+    weatherItem.icon = weather[@"icon"];
+    weatherItem.dateStr = json[@"dt_txt"];
     
-    return locationWeather;
+    return weatherItem;
 }
 
 @end
