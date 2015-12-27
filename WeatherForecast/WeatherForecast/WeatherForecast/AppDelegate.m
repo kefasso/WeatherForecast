@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "Reachability.h"
 
 @interface AppDelegate ()
+
+@property (retain, nonatomic) UILabel *internetConnectionLabel;
+@property (nonatomic) Reachability *internetReachability;
 
 @end
 
@@ -16,6 +20,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.internetReachability = [Reachability reachabilityForInternetConnection];
+    [self.internetReachability startNotifier];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
+    
+    _internetConnectionLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 64, 320, 24)];
+    _internetConnectionLabel.backgroundColor = [UIColor colorWithRed:0.694 green:0.286 blue:0.6 alpha:1];
+    _internetConnectionLabel.textColor = [UIColor whiteColor];
+    _internetConnectionLabel.textAlignment = NSTextAlignmentCenter;
+    _internetConnectionLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:15];
+    _internetConnectionLabel.text = NSLocalizedString(@"No Internet connection",nil);
+    _internetConnectionLabel.hidden = YES;
+    [self.window.rootViewController.view addSubview:_internetConnectionLabel];
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -40,6 +60,33 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)updateInterfaceWithReachability:(Reachability *)reachability
+{
+    if (reachability == self.internetReachability)
+    {
+        NetworkStatus netStatus = [reachability currentReachabilityStatus];
+        switch (netStatus)
+        {
+            case NotReachable:        {
+                _internetConnectionLabel.hidden = NO;
+                break;
+            }
+                
+            default:
+                _internetConnectionLabel.hidden = YES;
+                break;
+        
+        }
+    }
+}
+
+- (void) reachabilityChanged:(NSNotification *)note
+{
+    Reachability* curReach = [note object];
+    NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
+    [self updateInterfaceWithReachability:curReach];
 }
 
 @end
