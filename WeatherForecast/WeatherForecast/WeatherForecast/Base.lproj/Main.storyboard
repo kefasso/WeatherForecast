@@ -34,12 +34,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diE-7V-8dR">
-                                <rect key="frame" x="49" y="200" width="221" height="43"/>
+                                <rect key="frame" x="40" y="259" width="240" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="HFV-LC-ALe"/>
+                                    <constraint firstAttribute="height" constant="50" id="Pxi-nO-47P"/>
+                                    <constraint firstAttribute="width" constant="240" id="cxK-qa-f08"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Check for your location"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HFV-LC-ALe"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="checkForLocalization:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X8N-1w-qcS"/>
                                 </connections>
@@ -50,16 +57,38 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhf-JU-z0b">
+                                <rect key="frame" x="80" y="520" width="160" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rbZ-Wi-svu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="about OpenWeatherMap"/>
+                                <connections>
+                                    <action selector="aboutClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jtw-98-Uat"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="D9j-fM-Xmo" secondAttribute="trailing" constant="20" id="1i5-iT-9oq"/>
+                            <constraint firstItem="diE-7V-8dR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ndp-zt-u22"/>
                             <constraint firstItem="diE-7V-8dR" firstAttribute="top" secondItem="D9j-fM-Xmo" secondAttribute="bottom" constant="75" id="QHd-Hx-cDC"/>
                             <constraint firstItem="diE-7V-8dR" firstAttribute="centerX" secondItem="D9j-fM-Xmo" secondAttribute="centerX" id="RiY-Fe-R6M"/>
+                            <constraint firstItem="nhf-JU-z0b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bkf-Z4-6jt"/>
                             <constraint firstItem="D9j-fM-Xmo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="gwU-Qc-JDf"/>
+                            <constraint firstItem="diE-7V-8dR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hlh-B3-TtL"/>
                             <constraint firstItem="D9j-fM-Xmo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="kCG-vn-WxM"/>
                             <constraint firstAttribute="trailing" secondItem="diE-7V-8dR" secondAttribute="trailing" constant="50" id="luM-ux-Vd7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nhf-JU-z0b" secondAttribute="bottom" constant="8" id="vmm-DK-spI"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QHd-Hx-cDC"/>
+                                <exclude reference="RiY-Fe-R6M"/>
+                                <exclude reference="luM-ux-Vd7"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="i85-kp-09m"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -67,6 +96,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="345" y="456"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Yy0-eA-aRJ">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="jWV-sc-zyo" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rpT-cl-WOh"/>
+                        <viewControllerLayoutGuide type="bottom" id="5an-ch-O5w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fRG-EH-SWt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ul6-y6-Rhv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71Z-t5-3Xo">
+                                <rect key="frame" x="16" y="16" width="56" height="34"/>
+                                <state key="normal" title="&lt; back"/>
+                                <connections>
+                                    <action selector="backClicked:" destination="jWV-sc-zyo" eventType="touchUpInside" id="UOp-Ff-oXV"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ysY-pR-dKb">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ysY-pR-dKb" firstAttribute="centerY" secondItem="fRG-EH-SWt" secondAttribute="centerY" id="6Em-fm-SGA"/>
+                            <constraint firstItem="71Z-t5-3Xo" firstAttribute="leading" secondItem="fRG-EH-SWt" secondAttribute="leading" constant="16" id="HrA-Aq-D3A"/>
+                            <constraint firstItem="71Z-t5-3Xo" firstAttribute="top" secondItem="fRG-EH-SWt" secondAttribute="top" constant="16" id="LO8-FT-rVT"/>
+                            <constraint firstItem="ysY-pR-dKb" firstAttribute="centerX" secondItem="fRG-EH-SWt" secondAttribute="centerX" id="VGb-et-apL"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ysY-pR-dKb" id="ReK-mF-EUf"/>
+                        <outlet property="webView" destination="ul6-y6-Rhv" id="Wpv-XL-VXp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9c-df-kvk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="1097"/>
         </scene>
         <!--Weather List Controller-->
         <scene sceneID="B30-qb-6hN">

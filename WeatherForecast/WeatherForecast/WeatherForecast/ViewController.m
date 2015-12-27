@@ -100,4 +100,11 @@
     
 }
 
+- (IBAction)aboutClicked:(id)sender {
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"WebViewController"];
+    [self presentViewController:vc animated:YES completion:nil];
+
+    
+}
+
 @end

@@ -10,6 +10,8 @@
 		217B662B4275D45157956729 /* Pods_WeatherForecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7EC68AF30832E15F32E639 /* Pods_WeatherForecast.framework */; };
 		84039E861C2855D600108812 /* WeatherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84039E841C2855D600108812 /* WeatherCell.m */; settings = {ASSET_TAGS = (); }; };
 		84039E871C2855D600108812 /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84039E851C2855D600108812 /* WeatherCell.xib */; settings = {ASSET_TAGS = (); }; };
+		8474142F1C30181E002595D6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8474142E1C30181E002595D6 /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
+		847414321C302176002595D6 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847414311C302176002595D6 /* WebViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8491CC8E1C26BE0400CB3079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491CC8D1C26BE0400CB3079 /* main.m */; };
 		8491CC911C26BE0400CB3079 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491CC901C26BE0400CB3079 /* AppDelegate.m */; };
 		8491CC941C26BE0400CB3079 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491CC931C26BE0400CB3079 /* ViewController.m */; };
@@ -28,6 +30,10 @@
 		84039E831C2855D600108812 /* WeatherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherCell.h; sourceTree = "<group>"; };
 		84039E841C2855D600108812 /* WeatherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherCell.m; sourceTree = "<group>"; };
 		84039E851C2855D600108812 /* WeatherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
+		8474142D1C30181E002595D6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = WeatherForecast/Reachability.h; sourceTree = "<group>"; };
+		8474142E1C30181E002595D6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = WeatherForecast/Reachability.m; sourceTree = "<group>"; };
+		847414301C302176002595D6 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		847414311C302176002595D6 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		8491CC891C26BE0400CB3079 /* WeatherForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8491CC8D1C26BE0400CB3079 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8491CC8F1C26BE0400CB3079 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +73,8 @@
 		8491CC801C26BE0400CB3079 = {
 			isa = PBXGroup;
 			children = (
+				8474142D1C30181E002595D6 /* Reachability.h */,
+				8474142E1C30181E002595D6 /* Reachability.m */,
 				8491CC8B1C26BE0400CB3079 /* WeatherForecast */,
 				8491CC8A1C26BE0400CB3079 /* Products */,
 				F157CEE6127B2C38C7A4A44E /* Pods */,
@@ -145,6 +153,8 @@
 				8491CC931C26BE0400CB3079 /* ViewController.m */,
 				84CE372B1C271B1A009593A3 /* WeatherListController.h */,
 				84CE372C1C271B1A009593A3 /* WeatherListController.m */,
+				847414301C302176002595D6 /* WebViewController.h */,
+				847414311C302176002595D6 /* WebViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -300,8 +310,10 @@
 			files = (
 				8491CCA51C26BE6D00CB3079 /* LoadMethods.m in Sources */,
 				8491CC941C26BE0400CB3079 /* ViewController.m in Sources */,
+				847414321C302176002595D6 /* WebViewController.m in Sources */,
 				84CE372D1C271B1A009593A3 /* WeatherListController.m in Sources */,
 				8491CC911C26BE0400CB3079 /* AppDelegate.m in Sources */,
+				8474142F1C30181E002595D6 /* Reachability.m in Sources */,
 				84CE37201C26F12B009593A3 /* LocationWeather.m in Sources */,
 				84CE372A1C2717E9009593A3 /* WeatherItem.m in Sources */,
 				84CE37241C2707E2009593A3 /* LocationWeatherFactory.m in Sources */,
