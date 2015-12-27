@@ -24,12 +24,13 @@
 
 @implementation LoadMethods
 
-static LoadMethods *defMethods;
-
 +(LoadMethods*)defaultMethods{
-    if (!defMethods) {
-        defMethods = [[LoadMethods alloc] init];
-    }
+    
+    static LoadMethods *defMethods = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        defMethods = [[self alloc] init];
+    });
     return defMethods;
 }
 
@@ -41,7 +42,6 @@ static LoadMethods *defMethods;
     
     return self;
 }
-
 
 -(void)getWeatherByLongitude:(NSString*)lon andLatitude:(NSString*)lat to:(void(^)(LocationWeather*))success failure:(void(^)(NSError*))failure{
     NSDictionary *params = @{@"lat":lat, @"lon":lon, @"APPID":APPID};
